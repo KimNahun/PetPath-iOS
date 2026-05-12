@@ -52,9 +52,9 @@ PetPath는 **반려견 보호자**와 **이웃 워커** 두 가지 역할로 운
 ### Language & Platform
 | 항목 | 내용 |
 |---|---|
-| Language | Swift 5.9 |
-| Minimum iOS | 14.0 |
-| IDE | Xcode 15+ |
+| Language | Swift 5.0 |
+| Minimum iOS | 15.6 |
+| IDE | Xcode 16.2 |
 
 ### Architecture
 | 항목 | 내용 |
@@ -76,9 +76,9 @@ PetPath는 **반려견 보호자**와 **이웃 워커** 두 가지 역할로 운
 | 항목 | 내용 |
 |---|---|
 | HTTP | Moya + Alamofire |
-| WebSocket | Socket.IO-Client-Swift, Starscream 4.0.4 |
+| WebSocket | Socket.IO-Client-Swift |
 | Push | Firebase Cloud Messaging (FCM) |
-| Auth 저장 | Keychain |
+| Auth 저장 | Security + CryptoKit (직접 구현, AES-GCM 암호화) |
 
 ### Location & Background
 | 항목 | 내용 |
@@ -90,7 +90,8 @@ PetPath는 **반려견 보호자**와 **이웃 워커** 두 가지 역할로 운
 ### 기타
 | 항목 | 내용 |
 |---|---|
-| 지도 | KakaoMap SDK |
+| 지도 | 네이버 지도 SDK (NMapsMap), 산책 실시간 추적은 WKWebView |
+| 채팅 | WKWebView |
 | 애널리틱스 | Firebase |
 | 의존성 관리 | CocoaPods |
 
